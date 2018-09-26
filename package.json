@@ -1,11 +1,11 @@
 {
-  "name": "mmoney",
+  "name": "xhqb-client",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Rice-F <2604211051@qq.com>",
+  "author": "zf424zf <704273241@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --host 0.0.0.0 --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline  --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"

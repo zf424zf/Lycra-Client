@@ -19,7 +19,9 @@
       </tab>
       <div class="tab-swiper vux-center">
         <ul>
-          <li
+          <router-link
+            tag="li"
+            :to="'/detail/' + item.id"
             class="item border-bottom"
             v-for="item of tabInfo"
             :key="item.id"
@@ -37,7 +39,7 @@
               <p class="desc">{{item.desc}}</p>
             </div>
             <div class="triangle-top-left"></div>
-          </li>
+          </router-link>
         </ul>
         <button
           class="loadMore"
@@ -124,7 +126,7 @@ export default {
     },
     isShow (node) {
       let winTop = window.innerHeight
-      let scrollTop = document.documentElement.scrollTop
+      let scrollTop = document.body.scrollTop + document.documentElement.scrollTop
       let offsetTop = node.offsetTop
       // console.log(winTop)
       // console.log(scrollTop)
