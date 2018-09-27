@@ -38,7 +38,7 @@
               </div>
               <p class="desc">{{item.desc}}</p>
             </div>
-            <div class="triangle-top-left"></div>
+            <div v-if="item.is_recommend === '1'" class="triangle-top-left"></div>
           </router-link>
         </ul>
         <button
